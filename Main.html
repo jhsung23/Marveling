@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maveling::나의 여행 기록</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <style>
+      .swiper-container {
+        position: relative;
+        left: 15%;
+        right: 15%;
+        width: 70%;
+        height: 260px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0px;
+        overflow: hidden;
+      }
+      .title {
+        position: relative;
+        left: 15%;
+        right: 15%;
+        width: 70%;
+        margin-top: 190px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .spot-image-container {
+        position: relative;
+        left: 20%;
+        right: 20%;
+        width: 60%;
+      }
+      .spot-image-wrapper {
+        border-radius: 50%;
+        border-color: white;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+      .spot-image {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+      }
+      .spot-name {
+        text-align: center;
+        font-size: large;
+        margin: 0px;
+        font-weight: bold;
+      }
+      .spot-subname {
+        background-color: white;
+        text-align: center;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title">Maveling 스팟</p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_guam.JPG" alt="괌" />
+            </div>
+            <p class="spot-name">괌</p>
+            <p class="spot-subname">Guam</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_sapporo.JPG" alt="괌" />
+            </div>
+            <p class="spot-name">삿포로</p>
+            <p class="spot-subname">Japan</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_hokkaido.JPG" alt="괌" />
+            </div>
+            <p class="spot-name">홋카이도</p>
+            <p class="spot-subname">Japan</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_praha.png" alt="괌" />
+            </div>
+            <p class="spot-name">프라하</p>
+            <p class="spot-subname">Czech</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_krumlov.jpg" alt="괌" />
+            </div>
+            <p class="spot-name">체스키크룸로브</p>
+            <p class="spot-subname">Czech</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_vinne.jpg" alt="괌" />
+            </div>
+            <p class="spot-name">빈</p>
+            <p class="spot-subname">Austria</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_saltz.png" alt="괌" />
+            </div>
+            <p class="spot-name">잘츠부르크</p>
+            <p class="spot-subname">Austria</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_hall.png" alt="괌" />
+            </div>
+            <p class="spot-name">할슈타트</p>
+            <p class="spot-subname">Austria</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_buda.jpg" alt="괌" />
+            </div>
+            <p class="spot-name">부다페스트</p>
+            <p class="spot-subname">Hungary</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="spot-image-container">
+            <div class="spot-image-wrapper">
+              <img class="spot-image" src="./src/image/spot_brati.jpg" alt="괌" />
+            </div>
+            <p class="spot-name">브라티슬라바</p>
+            <p class="spot-subname">Slovakia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <script>
+      const spotSwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 방향
+        slidesPerView: 4, // 슬라이드를 한번에 4개를 보여준다
+        slidesPerGroup: 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+        // spaceBetween: 5, // 슬라이드간 padding 값 30px 씩 떨어뜨려줌
+
+        // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+        // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+        loopFillGroupWithBlank: true,
+        loop: false, // loop 를 true 로 할경우 무한반복 슬라이드, false 로 할경우 슬라이드의 끝에서 더보여지지 않음
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 반응형
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          720: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
