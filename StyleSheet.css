@@ -126,3 +126,76 @@ header {
   height: 63%;
   object-fit: contain;
 }
+.spot-page-info {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  /* background-color: lavender; */
+}
+.spot-page-info-head-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 660px;
+  margin-bottom: 0;
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-family: 'Sansita Swashed', cursive;
+}
+.spot-page-info-body-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 660px;
+  font-size: 23px;
+  font-family: 'GoyangIlsan';
+}
+.spot-list-container {
+  display: flex;
+  justify-content: center;
+}
+.spot-list {
+  /* background-color: red; */
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 150px;
+}
+.spot-list-item-wrapper {
+  height: 120px;
+  width: 660px;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #f7f9fc;
+}
+.spot-list-item {
+  padding: 15px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.spot-list-item-image-wrapper {
+  height: 100%;
+  float: left;
+}
+.spot-list-item-image {
+  height: 100%;
+  object-fit: fill;
+  border-radius: 90%;
+}
+.spot-list-item-descript {
+  margin-left: 20px;
+  display: inline-block;
+
+  /* height: 100px; */
+}
+.spot-name {
+  font-size: 23px;
+}
+.spot-period {
+  font-size: 16px;
+}
