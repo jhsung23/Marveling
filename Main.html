@@ -4,8 +4,24 @@
     <meta charset="UTF-8" />
     <title>Maveling::나의 여행 기록</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <style>
+      * {
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+      }
+      .title {
+        position: relative;
+        left: 15%;
+        right: 15%;
+        width: 70%;
+        margin-top: 190px;
+        font-size: 25px;
+        font-weight: bold;
+      }
       .swiper-container {
         position: relative;
         left: 15%;
@@ -16,15 +32,6 @@
         padding-right: 30px;
         margin: 0px;
         overflow: hidden;
-      }
-      .title {
-        position: relative;
-        left: 15%;
-        right: 15%;
-        width: 70%;
-        margin-top: 190px;
-        font-size: 25px;
-        font-weight: bold;
       }
       .spot-image-container {
         position: relative;
@@ -58,10 +65,58 @@
         text-align: center;
         margin: 0px;
       }
+      header {
+        height: 75px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+      .nav-wrapper {
+        width: 1170px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .nav-logo {
+        line-height: 75px;
+        float: left;
+        font-size: 30px;
+        font-family: 'Sansita Swashed', cursive;
+        margin: 0 80px;
+      }
+      .nav-menu {
+        list-style-type: none;
+      }
+      .nav-item {
+        float: left;
+      }
+      .nav-item a {
+        text-decoration: none;
+        line-height: 85px;
+        font-size: 20px;
+        color: black;
+        padding: 0 40px;
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <p class="title">Maveling 스팟</p>
+    <header>
+      <div class="nav-wrapper">
+        <h1 class="nav-logo">Maveling</h1>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="">스팟</a></li>
+            <li class="nav-item"><a href="">메뉴2</a></li>
+            <li class="nav-item"><a href="">메뉴3</a></li>
+            <li class="nav-item"><a href="">메뉴4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <p class="title"><span style="font-family: 'Sansita Swashed', cursive">Maveling</span> 스팟</p>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
