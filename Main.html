@@ -10,15 +10,24 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <style>
+      @font-face {
+        font-family: 'GoyangIlsan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
       * {
         font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+      }
+      body {
+        margin: 0;
       }
       .title {
         position: relative;
         left: 15%;
         right: 15%;
         width: 70%;
-        margin-top: 190px;
+        margin-top: 130px;
         font-size: 25px;
         font-weight: bold;
       }
@@ -66,56 +75,99 @@
         margin: 0px;
       }
       header {
-        height: 75px;
-        position: fixed;
+        height: 90px;
+        position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 9999;
+        align-items: center;
+        display: flex;
+      }
+      .clearfix {
+        content: '';
+        height: 90px;
+        display: block;
+        clear: both;
       }
       .nav-wrapper {
         width: 1170px;
-        margin: 0;
         margin-left: auto;
         margin-right: auto;
       }
       .nav-logo {
-        line-height: 75px;
-        float: left;
         font-size: 30px;
         font-family: 'Sansita Swashed', cursive;
-        margin: 0 80px;
+        margin-right: 80px;
       }
       .nav-menu {
         list-style-type: none;
       }
       .nav-item {
-        float: left;
+        display: inline-block;
       }
       .nav-item a {
         text-decoration: none;
-        line-height: 85px;
-        font-size: 20px;
+        font-size: 18px;
         color: black;
         padding: 0 40px;
         display: block;
+      }
+      .main-description-container {
+        height: 400px;
+        background-color: #e9edf6;
+        /* background-color: #f7f9fc; */
+        width: 100%;
+        padding: 0;
+      }
+      .main-description-text-wrapper {
+        width: 100%;
+        height: 37%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .main-description-text {
+        font-size: 22px;
+        line-height: 150%;
+        font-family: 'GoyangIlsan';
+      }
+      .main-description-image {
+        width: 100%;
+        height: 63%;
+        object-fit: contain;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="nav-wrapper">
-        <h1 class="nav-logo">Maveling</h1>
         <nav>
           <ul class="nav-menu">
-            <li class="nav-item"><a href="">스팟</a></li>
-            <li class="nav-item"><a href="">메뉴2</a></li>
+            <li class="nav-item"><span class="nav-logo">Maveling</span></li>
+            <li class="nav-item"><a href="">소개</a></li>
+            <li class="nav-item"><a href="">여행 스팟</a></li>
             <li class="nav-item"><a href="">메뉴3</a></li>
             <li class="nav-item"><a href="">메뉴4</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <div class="clearfix"></div>
+
+    <div class="main-description-container">
+      <div class="main-description-text-wrapper">
+        <div class="main-description-text">
+          나의 여행 기록,<br />My traveling을 담은 공간<br /><span
+            style="font-size: 40px; font-family: 'Sansita Swashed', cursive"
+            >Maveling</span
+          >
+        </div>
+      </div>
+      <img class="main-description-image" src="./src/image/main.png" alt="" />
+    </div>
+
     <p class="title"><span style="font-family: 'Sansita Swashed', cursive">Maveling</span> 스팟</p>
     <div class="swiper-container">
       <div class="swiper-wrapper">
