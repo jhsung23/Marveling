@@ -3,14 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Maveling::나의 여행 기록</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css" />
     <link type="text/css" rel="stylesheet" href="./StyleSheet.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <style></style>
+    <style>
+      .move-top-button {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 35px;
+        right: 35px;
+        cursor: pointer;
+      }
+      .move-top-image {
+        object-fit: cover;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -150,6 +169,10 @@
       <div class="swiper-button-prev"></div>
     </div>
 
+    <div class="move-top-button">
+      <img class="move-top-image" src="./src/image/upArrow.png" alt="위로가기" />
+    </div>
+
     <script>
       const spotSwiper = new Swiper('.swiper-container', {
         direction: 'horizontal', // 방향
@@ -181,5 +204,6 @@
         },
       });
     </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
