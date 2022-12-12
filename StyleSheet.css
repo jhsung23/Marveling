@@ -238,13 +238,13 @@ header {
   width: 900px;
   display: grid;
   margin: 0 auto;
-  grid-template-rows: 180px 180px;
+  grid-template-rows: 130px 130px;
   gap: 25px;
   /* FIXME */
   margin-bottom: 100px;
 }
 .log-item {
-  height: 180px;
+  height: 130px;
   width: 100%;
   border-radius: 10px;
   background-color: #f7f9fc;
@@ -254,7 +254,7 @@ header {
 }
 .log-item-image {
   width: 240px;
-  height: 180px;
+  height: 130px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
