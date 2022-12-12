@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'GoyangIlsan';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,23 +13,19 @@ body {
 }
 .title {
   position: relative;
-  left: 15%;
-  right: 15%;
-  width: 70%;
+  margin: 0 auto 20px;
+  width: 900px;
   margin-top: 130px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: bold;
 }
 .swiper-container {
-  position: relative;
-  left: 15%;
-  right: 15%;
-  width: 70%;
+  width: 840px;
   height: 260px;
+  overflow: hidden;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0px;
-  overflow: hidden;
 }
 .spot-image-container {
   position: relative;
@@ -60,6 +57,8 @@ body {
 .spot-subname {
   background-color: white;
   text-align: center;
+  font-weight: 530;
+  color: #333333;
   margin: 0px;
 }
 header {
@@ -70,7 +69,7 @@ header {
   left: 0;
   z-index: 9999;
   align-items: center;
-  display: flex;
+  display: grid;
 }
 .clearfix {
   content: '';
@@ -157,7 +156,6 @@ header {
   justify-content: center;
 }
 .spot-list {
-  /* background-color: red; */
   list-style-type: none;
   display: inline-block;
   padding: 0;
@@ -190,11 +188,9 @@ header {
 .spot-list-item-descript {
   margin-left: 20px;
   display: inline-block;
-
-  /* height: 100px; */
 }
 .spot-name {
-  font-size: 23px;
+  font-size: 20px;
 }
 .spot-period {
   font-size: 16px;
