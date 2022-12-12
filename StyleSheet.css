@@ -267,11 +267,11 @@ header {
 }
 .log-item-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 .log-item-content {
-  font-size: 16px;
+  font-size: 17px;
   padding-top: 10px;
   line-height: 160%;
   margin: 0;
