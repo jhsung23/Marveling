@@ -195,3 +195,30 @@ header {
 .spot-period {
   font-size: 16px;
 }
+.page-article-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+}
+.page-title-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 660px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 23px;
+}
+.page-body-text {
+  font-family: 'GoyangIlsan';
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 660px;
+  font-size: 23px;
+  line-height: 130%;
+}
