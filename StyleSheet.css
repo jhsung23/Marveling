@@ -356,6 +356,7 @@ header {
   width: 234px;
   height: 234px;
   object-fit: cover;
+  border-radius: 4px;
 }
 .photo-item-wrapper:hover img {
   opacity: 0.2;
@@ -377,4 +378,18 @@ header {
 }
 .photo-content-date {
   font-size: 13px;
+}
+.gallery-container {
+  width: 900px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 222px 222px 222px 222px;
+  gap: 4px;
+  margin-bottom: 100px;
+}
+.gallery-container img {
+  width: 222px;
+  height: 222px;
+  object-fit: cover;
+  border-radius: 4px;
 }
