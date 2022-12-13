@@ -347,8 +347,34 @@ header {
   margin-top: 20px;
   margin-bottom: 150px;
 }
+.photo-item-wrapper {
+  position: relative;
+  width: 234px;
+  height: 234px;
+}
 .photo-item {
   width: 234px;
   height: 234px;
   object-fit: cover;
+}
+.photo-item-wrapper:hover img {
+  opacity: 0.2;
+}
+.photo-item-wrapper:hover span {
+  z-index: 5;
+  visibility: visible;
+}
+.photo-content {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  width: 234px;
+  left: 0%;
+  top: 45%;
+  color: black;
+  visibility: hidden;
+  text-align: center;
+}
+.photo-content-date {
+  font-size: 13px;
 }
