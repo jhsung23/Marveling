@@ -264,17 +264,19 @@ header {
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: auto;
 }
 .log-item-title {
   margin: 0;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
 }
 .log-item-content {
-  font-size: 17px;
+  font-size: 16px;
   padding-top: 7px;
   line-height: 160%;
   color: #444444;
+  font-weight: 500;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
