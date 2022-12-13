@@ -11,13 +11,24 @@
 body {
   margin: 0;
 }
-.title {
-  position: relative;
-  margin: 0 auto 20px;
+.title-wrapper {
+  margin: 0 auto;
   width: 900px;
   margin-top: 130px;
+  display: flex;
+}
+.title {
   font-size: 27px;
   font-weight: bold;
+  width: 800px;
+}
+.more-title {
+  width: 100px;
+  margin: auto 0 10px;
+  text-align: end;
+  text-decoration: none;
+  color: #aaaaaa;
+  font-size: 14px;
 }
 .swiper-container {
   width: 840px;
