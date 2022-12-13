@@ -324,3 +324,18 @@ header {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+.photo-container {
+  display: grid;
+  width: 710px;
+  margin: 0 auto;
+  grid-template-columns: 234px 234px 234px;
+  grid-template-rows: 234px 234px 234px;
+  gap: 4px 4px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.photo-item {
+  width: 234px;
+  height: 234px;
+  object-fit: cover;
+}
