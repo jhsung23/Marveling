@@ -272,9 +272,15 @@ header {
 }
 .log-item-content {
   font-size: 17px;
-  padding-top: 10px;
+  padding-top: 7px;
   line-height: 160%;
+  color: #444444;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .travel-log-container {
   display: grid;
@@ -310,7 +316,7 @@ header {
 .travel-log-item-content {
   font-size: 13px;
   margin: 5px 3px 5px;
-  color: black;
+  color: #444444;
   line-height: 140%;
   overflow: hidden;
   text-overflow: ellipsis;
